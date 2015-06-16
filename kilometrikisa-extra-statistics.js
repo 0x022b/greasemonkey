@@ -2,7 +2,7 @@
 // @author       Janne K
 // @name         Kilometrikisa Extra Statistics
 // @description  Adds extra statistics to Kilometrikisa results.
-// @version      1.0.0
+// @version      1.1.0
 // @homepage     https://bitbucket.org/scoobadog/tampermonkey/
 // @updateURL    https://bitbucket.org/scoobadog/tampermonkey/raw/master/kilometrikisa-extra-statistics.js
 // @include      /^https?://www\.kilometrikisa\.fi/teams/.+$/
@@ -61,6 +61,9 @@ $(".content table tbody tr").each(function (i, row) {
 	$row.find("td:nth(3)").append(createIndicator(days, averageDays));
 	$row.find("td:nth(4)").append(createIndicator(average, totalAverage));
 });
+
+$(".team-contest-table li:nth(4)")
+	[0].childNodes[1].nodeValue = toVariant(averageDays) + " pv/hlö";
 
 $(".team-contest-table li:nth(3)").after(
 	$("<li class='data-item'>")
