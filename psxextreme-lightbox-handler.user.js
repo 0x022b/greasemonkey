@@ -2,13 +2,12 @@
 // @author       Janne K
 // @name         PSX Extreme Lightbox Handler
 // @description  Prevents opening of the lightbox on PSX Extreme.
-// @version      1.1.0
+// @version      1.2.0
 // @homepage     https://bitbucket.org/scoobadog/tampermonkey/
 // @updateURL    https://bitbucket.org/scoobadog/tampermonkey/raw/master/psxextreme-lightbox-handler.user.js
-// @include      /^http://www\.psxextreme\.com/$/
+// @include      /^https?:\/\/www\.psxextreme\.com\/.*$/
 // @grant        none
-// @run-at       document-body
+// @run-at       document-start
 // ==/UserScript==
-if (set_cookie) {
-    set_cookie("fb_like", "false", 1);
-}
+document.cookie = "fb_like=false;domain=."
+	+ top.location.host.replace(/www\./i, "") + ";path=/";
