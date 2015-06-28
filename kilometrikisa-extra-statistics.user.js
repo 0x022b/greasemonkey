@@ -2,10 +2,10 @@
 // @author       Janne K
 // @name         Kilometrikisa Extra Statistics
 // @description  Adds extra statistics to Kilometrikisa results.
-// @version      1.2.0
+// @version      1.2.1
 // @homepage     https://bitbucket.org/scoobadog/tampermonkey/
 // @updateURL    https://bitbucket.org/scoobadog/tampermonkey/raw/master/kilometrikisa-extra-statistics.user.js
-// @include      /^https?://www\.kilometrikisa\.fi/teams/.+$/
+// @include      /^https?:\/\/www\.kilometrikisa\.fi\/teams\/.+$/
 // @grant        none
 // @run-at       document-ready
 // ==/UserScript==
