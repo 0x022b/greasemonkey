@@ -2,7 +2,7 @@
 // @author       Janne K
 // @name         Kilometrikisa Extra Statistics
 // @description  Adds extra statistics to Kilometrikisa results.
-// @version      1.2.2
+// @version      1.2.3
 // @homepage     https://bitbucket.org/scoobadog/tampermonkey/
 // @updateURL    https://bitbucket.org/scoobadog/tampermonkey/raw/master/kilometrikisa-extra-statistics.user.js
 // @include      /^https?:\/\/www\.kilometrikisa\.fi\/teams\/.+$/
@@ -21,7 +21,7 @@ function createIndicator(value, comparison) {
 	} else if (value < comparison) {
 		$html.addClass("fa-caret-down").css({ "color": "red" });
 	} else {
-		$html.addClass("fa-circle");
+		$html.addClass("fa-caret-right");
 	}
 	return $html;
 }
