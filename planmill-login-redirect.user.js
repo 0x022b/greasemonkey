@@ -2,9 +2,9 @@
 // @author       Janne K
 // @name         PlanMill Login Redirect
 // @description  Redirects an expired session to a login page that doesn't fail.
-// @version      1.3.1
-// @homepage     https://bitbucket.org/scoobadog/tampermonkey/
-// @updateURL    https://bitbucket.org/scoobadog/tampermonkey/raw/master/planmill-login-redirect.user.js
+// @version      1.3.2
+// @homepage     https://github.com/scoobadog/tampermonkey/
+// @updateURL    https://raw.githubusercontent.com/scoobadog/tampermonkey/master/planmill-login-redirect.user.js
 // @include      /^https:\/\/online\.planmill\.com\/.+\/.+$/
 // @grant        none
 // @run-at       document-body
