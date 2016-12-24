@@ -2,7 +2,7 @@
 // @author       Janne K
 // @name         YouTube Playlist Duration
 // @description  Display the total duration of YouTube playlist
-// @version      1.0.0
+// @version      1.1.0
 // @homepage     https://github.com/scoobadog/tampermonkey/
 // @downloadURL  https://raw.githubusercontent.com/scoobadog/tampermonkey/master/youtube-playlist-duration.user.js
 // @include      /^https?:\/\/www\.youtube\.com\/.*$/
@@ -10,7 +10,7 @@
 // @run-at       document-end
 // ==/UserScript==
 
-function totalDuration() {
+document.addEventListener("spfdone", function () {
 	if (location.pathname !== "/playlist") {
 		return;
 	}
@@ -22,8 +22,9 @@ function totalDuration() {
 		total += parseInt(parts[1], 10);
 	}
 	var duration = document.createElement("li");
+	duration.innerText = "Duration ";
 	if (document.querySelector(".load-more-text")) {
-		duration.innerText = "+";
+		duration.innerText += "+";
 	}
 	if (total > 3600) {
 		var hours = parseInt(total / 3600, 10);
@@ -36,7 +37,5 @@ function totalDuration() {
 	duration.innerText += (seconds < 10 ? "0" : "") + seconds;
 	var header = document.querySelector(".pl-header-details");
 	header.insertBefore(duration, header.lastChild);
-}
-
-window.addEventListener("spfdone", totalDuration);
-totalDuration();
+});
+document.dispatchEvent(new Event("spfdone"));
