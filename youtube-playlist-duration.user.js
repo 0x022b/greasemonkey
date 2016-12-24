@@ -2,9 +2,9 @@
 // @author       Janne K
 // @name         YouTube Playlist Duration
 // @description  Display the total duration of YouTube playlist
-// @version      1.1.0
-// @homepage     https://github.com/scoobadog/tampermonkey/
-// @downloadURL  https://raw.githubusercontent.com/scoobadog/tampermonkey/master/youtube-playlist-duration.user.js
+// @version      1.1.1
+// @homepage     https://github.com/scoobadog/greasemonkey/
+// @downloadURL  https://raw.githubusercontent.com/scoobadog/greasemonkey/master/youtube-playlist-duration.user.js
 // @include      /^https?:\/\/www\.youtube\.com\/.*$/
 // @grant        none
 // @run-at       document-end
