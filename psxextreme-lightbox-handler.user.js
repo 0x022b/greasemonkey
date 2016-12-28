@@ -1,1 +1,0 @@
-scripts/psxextreme-lightbox-handler.user.js

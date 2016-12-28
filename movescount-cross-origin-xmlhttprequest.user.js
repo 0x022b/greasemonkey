@@ -1,1 +1,0 @@
-scripts/movescount-cross-origin-xmlhttprequest.user.js

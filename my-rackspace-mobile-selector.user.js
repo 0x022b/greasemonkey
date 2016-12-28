@@ -1,1 +1,0 @@
-scripts/my-rackspace-mobile-selector.user.js
