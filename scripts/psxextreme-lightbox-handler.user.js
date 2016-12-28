@@ -2,9 +2,9 @@
 // @author       Janne K
 // @name         PSX Extreme Lightbox Handler
 // @description  Prevents opening of the lightbox on PSX Extreme.
-// @version      1.2.4
-// @homepage     https://github.com/scoobadog/greasemonkey/
-// @downloadURL  https://raw.githubusercontent.com/scoobadog/greasemonkey/master/scripts/psxextreme-lightbox-handler.user.js
+// @version      1.2.5
+// @homepage     https://github.com/scoobadog/greasemonkey
+// @downloadURL  https://github.com/scoobadog/greasemonkey/raw/master/scripts/psxextreme-lightbox-handler.user.js
 // @include      /^https?:\/\/www\.psxextreme\.com\/.*$/
 // @grant        none
 // @run-at       document-start

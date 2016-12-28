@@ -2,9 +2,9 @@
 // @author       Janne K
 // @name         Kilometrikisa Extra Statistics
 // @description  Adds extra statistics to Kilometrikisa results.
-// @version      1.2.7
-// @homepage     https://github.com/scoobadog/greasemonkey/
-// @downloadURL  https://raw.githubusercontent.com/scoobadog/greasemonkey/master/scripts/kilometrikisa-extra-statistics.user.js
+// @version      1.2.8
+// @homepage     https://github.com/scoobadog/greasemonkey
+// @downloadURL  https://github.com/scoobadog/greasemonkey/raw/master/scripts/kilometrikisa-extra-statistics.user.js
 // @include      /^https?:\/\/www\.kilometrikisa\.fi\/teams\/.+$/
 // @grant        none
 // @run-at       document-ready

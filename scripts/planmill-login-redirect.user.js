@@ -2,9 +2,9 @@
 // @author       Janne K
 // @name         PlanMill Login Redirect
 // @description  Redirects an expired session to a login page that doesn't fail.
-// @version      1.3.5
-// @homepage     https://github.com/scoobadog/greasemonkey/
-// @downloadURL  https://raw.githubusercontent.com/scoobadog/greasemonkey/master/scripts/planmill-login-redirect.user.js
+// @version      1.3.6
+// @homepage     https://github.com/scoobadog/greasemonkey
+// @downloadURL  https://github.com/scoobadog/greasemonkey/raw/master/scripts/planmill-login-redirect.user.js
 // @include      /^https:\/\/online\.planmill\.com\/.+\/.+$/
 // @grant        none
 // @run-at       document-body
