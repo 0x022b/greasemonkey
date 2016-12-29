@@ -2,9 +2,9 @@
 // @author       Janne K
 // @name         Dropbox Direct Download Links
 // @description  Adds a button to Dropbox shared folder that lists direct download links.
-// @version      1.0.1
+// @version      1.0.2
 // @homepage     https://github.com/scoobadog/greasemonkey
-// @downloadURL  https://github.com/scoobadog/greasemonkey/raw/master/scripts/dropbox-direct-download-links.user.js
+// @downloadURL  https://raw.githubusercontent.com/scoobadog/greasemonkey/master/scripts/dropbox-direct-download-links.user.js
 // @include      /^https?://www\.dropbox\.com/.+\?dl=0$/
 // @grant        none
 // @run-at       document-start
