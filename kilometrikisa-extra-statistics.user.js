@@ -1,1 +1,0 @@
-scripts/kilometrikisa-extra-statistics.user.js
