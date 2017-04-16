@@ -2,7 +2,7 @@
 // @author       Janne K
 // @name         Dropbox Direct Download Links
 // @description  Adds a button to Dropbox shared folder that lists direct download links.
-// @version      1.2.0
+// @version      1.3.0
 // @homepage     https://github.com/scoobadog/greasemonkey
 // @downloadURL  https://raw.githubusercontent.com/scoobadog/greasemonkey/master/scripts/dropbox-direct-download-links.user.js
 // @include      /^https?://www\.dropbox\.com/.+\?dl=0(?:#.*)?$/
@@ -22,15 +22,17 @@ var d = document, o, f = function () {
 				var l = d.createElement("div");
 				l.id = "links";
 				l.className = "sl-gallery-container";
-				d.querySelectorAll(".sl-file-link").forEach(function (a) {
-					l.innerHTML += a.protocol +
-						"//dl.dropboxusercontent.com" + a.pathname + "<br/>";
+				d.querySelectorAll(".sl-grid-cell a").forEach(function (a) {
+					l.innerHTML += "<p style='font-size: 12px'>" + a.protocol +
+						"//dl.dropboxusercontent.com" + a.pathname + "</p>";
 				});
 				d.querySelector(".sl-page-body").appendChild(l);
 			}
 		});
 		var c = d.querySelector(".react-title-bar__controls");
-		c.insertBefore(e, c.lastChild);
+        if (c) {
+            c.insertBefore(e, c.lastChild);
+        }
 	}
 };
 if (d.querySelector(".react-title-bar")) {
