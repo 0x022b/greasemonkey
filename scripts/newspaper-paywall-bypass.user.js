@@ -2,9 +2,9 @@
 // @author       Janne K
 // @name         Newspaper Paywall Bypass
 // @description  Bypasses paywall on Finnish newspapers' websites
-// @version      1.1.4
-// @homepage     https://github.com/scoobadog/greasemonkey
-// @downloadURL  https://raw.githubusercontent.com/scoobadog/greasemonkey/master/scripts/newspaper-paywall-bypass.user.js
+// @version      1.1.5
+// @homepage     https://github.com/0x022b/greasemonkey
+// @downloadURL  https://raw.githubusercontent.com/0x022b/greasemonkey/master/scripts/newspaper-paywall-bypass.user.js
 // @include      /^https?://www\.ess\.fi/.+$/
 // @include      /^https?://www\.hs\.fi/.+$/
 // @grant        none
